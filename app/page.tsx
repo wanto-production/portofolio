@@ -29,7 +29,7 @@ export const metadata:Metadata ={
 export default function Home() {
   return (
     <main>
-        <section className=' w-full h-screen relative flex flex-col justify-center items-center  bg-blue-200 kontener overflow-x-hidden'>
+        <section className=' w-full h-screen relative flex flex-col justify-center items-center  bg-green-200 kontener overflow-x-hidden'>
           <img className=' absolute w-full h-auto bottom-0' src="/parallax/hill1.png" alt="" />
           <img className=' absolute w-full h-auto bottom-0' src="/parallax/hill2.png" alt="" />
           <img className='absolute w-[80%] h-auto bottom-0 right-0 animate-right ' src="/parallax/hill3.png" alt="" />
