@@ -38,7 +38,7 @@ export default function Navbar() {
       <nav className={` w-full h-full bg-greenleaf ${scroll?'opacity-100':'opacity-40'} duration-300 shadow-lg flex justify-between items-center pr-2 pl-2`}>
         <h2 className=' text-white text-2xl'>ikhwan satrio</h2>
         <DropdownMenu>
-        <DropdownMenuTrigger><i className='fa fa-bars text-white text-xl font-semibold mt-2'></i></DropdownMenuTrigger>
+        <DropdownMenuTrigger className=' outline-none'><i className='fa fa-bars text-white text-xl font-semibold mt-2'></i></DropdownMenuTrigger>
         <DropdownMenuContent className=' mr-3'>
           <DropdownMenuLabel>section</DropdownMenuLabel>
           <DropdownMenuSeparator />
