@@ -14,6 +14,7 @@ import {
 import {
   Card,
   CardContent,
+  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
@@ -49,7 +50,7 @@ export default function Home() {
                 <AlertDialogHeader>
                 <AlertDialogTitle>belom ada cv aku wak</AlertDialogTitle>
                 <AlertDialogDescription>
-                    <Image className=' h-auto w-auto' src="/atmin.jpg" alt="" width={200} height={150}/>
+                    <Image className=' h-auto w-auto' priority src="/atmin.jpg" alt="" width={200} height={150}/>
                 </AlertDialogDescription>
                 </AlertDialogHeader>
                 <AlertDialogFooter>
@@ -61,8 +62,7 @@ export default function Home() {
             <a className=' bg-greenleaf p-2 rounded-md text-white text-lg' href="#about">about me</a>
           </div>
         </section>
-        <section id='about' className='w-full h-screen relative flex flex-col justify-center items-center gap-4 border-b-2 border-greenleaf'>
-          <h2 className=' absolute top-2 text-greenleaf font-semibold text-2xl'>about me</h2>
+        <section id='about' className='w-full h-screen flex flex-col justify-center items-center gap-4 border-b-2 border-greenleaf'>
           <Image src="/jomok.jpg" className=' rounded-md w-auto h-auto' alt='' width={300} height={200}/>
           <div className=' flex items-center gap-2 '>
 
@@ -80,11 +80,10 @@ export default function Home() {
 
           </div>
 
-          <p className=' font-[Roboto,Arial,sans-serif] w-[80%] text-center sm:text-lg md:text-2xl'>hello i`m ikhwan satrio from indonesia,i really enjoy learning leanguage like javascript and rust</p>
+          <p className=' font-[Roboto,Arial,sans-serif] w-[80%] text-center sm:text-lg md:text-2xl'>hello i`m ikhwan satrio from indonesia,i really enjoy learning leanguage like javascript and rust!</p>
           <a href="#skills" className='p-2 bg-greenleaf text-white rounded-md'>my skills <i className="fa fa-arrow-circle-down" aria-hidden="true"></i> </a>
         </section>
-        <section id='skills' className='relative w-full min-h-[50vh] p-5 h-fit flex flex-col justify-center items-center gap-2 border-b-2 border-greenleaf'>
-          <h2 className=' absolute top-2 text-greenleaf font-semibold text-2xl'>my skills</h2>
+        <section id='skills' className=' w-full min-h-[100vh] p-5 h-fit flex flex-col justify-center items-center gap-2 border-b-2 border-greenleaf'>
           <div className=' flex gap-2 flex-wrap justify-center items-center mt-[30px]'>
 
           <Card className=' shadow-lg'>
@@ -124,9 +123,7 @@ export default function Home() {
           </div>
           <a href="#project" className='p-2 bg-greenleaf text-white rounded-md'>my project <i className="fa fa-arrow-circle-down" aria-hidden="true"></i> </a>
         </section>
-        <section className='w-full min-h-[50vh] h-fit p-3 relative flex justify-center ' id='project'>
-          <h2 className=' absolute top-2 text-greenleaf font-semibold text-2xl'>my project</h2>
-
+        <section className='w-full min-h-[50vh] h-fit p-3 flex justify-center ' id='project'>
           <div className='flex flex-wrap justify-center items-center gap-3 mt-[30px]'>
             <a href="https://wanto-production.github.io/quran-digital">
               <Card>
@@ -136,16 +133,22 @@ export default function Home() {
                 <CardContent className=' p-2' >
                   <div className=" w-[250px] h-[150px] bg-gradient-to-r from-green-300 via-green-400 to-green-500 p-8"/>
                 </CardContent>
+                <CardFooter>
+                  <h2>web app for readng al-Qur'an</h2>
+                </CardFooter>
               </Card>
             </a>
             <a href="https://rpl-weather-wheat.vercel.app/">
-              <Card>
+              <Card className=' w-[270px]'>
                 <CardHeader>
                   <CardTitle>weather app</CardTitle>
                 </CardHeader>
                 <CardContent className=' p-2' >
                   <div className=" w-[250px] h-[150px] bg-gradient-to-r from-pink-300 via-pink-400 to-pink-500 p-8"/>
                 </CardContent>
+                <CardFooter>
+                  <h2>web app to find out the latest weather</h2>
+                </CardFooter>
               </Card>
             </a>
           </div>
