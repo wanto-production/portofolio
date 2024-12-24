@@ -14,7 +14,7 @@ export default function Navbar() {
   const [scroll,setScroll] = useState(false)
 
   useEffect(()=>{
-    let timer:any;
+    let timer:any;// eslint-disable-line
 
     const handlescrol =()=>{
       setScroll(true)
