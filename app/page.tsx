@@ -134,7 +134,7 @@ export default function Home() {
                   <div className=" w-[250px] h-[150px] bg-gradient-to-r from-green-300 via-green-400 to-green-500 p-8"/>
                 </CardContent>
                 <CardFooter>
-                  <h2>web app for readng al-Qur'an</h2>
+                  <h2>web app for readng al-Quran</h2>
                 </CardFooter>
               </Card>
             </a>
