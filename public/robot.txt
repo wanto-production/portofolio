@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://portofolio-ikhwans.vercel.app/sitemap.xml
