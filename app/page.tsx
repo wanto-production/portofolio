@@ -25,6 +25,9 @@ export const metadata:Metadata ={
   title:'home',
   description:'hello im ikhwan satrio wicaksono, a fullstack developer',
   keywords:['portofolio ikhwan satrio','portofolio'],
+  verification:{
+    google:"google-site-verification=eFSS6--_5HHxP92Joz-my95FdWfmI5dVS-38_l0FKjE"
+  }
 }
 
 export default function Home() {
